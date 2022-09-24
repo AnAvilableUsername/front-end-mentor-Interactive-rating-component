@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: hsl(213deg, 19%, 18%);
+  max-width: 40rem;
+  padding: 2rem 2rem;
+  font-family: overPass, sans-serif;
+  border-radius: 2rem;
+  flex-direction: column;
+}
+
+.container1 {
+  display: flex;
+  row-gap: 1.5rem;
+}
+.container1__icon {
+  background-image: url(./images/icon-star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #303a46;
+  padding: 2rem;
+  align-self: flex-start;
+  border-radius: 50%;
+}
+.container1__header {
+  color: hsl(0deg, 0%, 100%);
+}
+.container1__p {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 1.5rem;
+}
+.container1__rating {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 0.6rem 0;
+}
+.container1__rating--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303a46;
+  color: hsl(216deg, 12%, 54%);
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  border: none;
+}
+.container1__rating--btn:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: #8f9fb3;
+}
+.container1__rating--btn:focus {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.container1__submit {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1rem 0;
+  transition: 100ms;
+}
+.container1__submit:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+.container1__submit:disabled {
+  background-color: #363c45;
+  color: grey;
+}
+
+.container2 {
+  display: none;
+  align-items: center;
+  row-gap: 1rem;
+}
+.container2__icon {
+  background-image: url(./images/illustration-thank-you.svg);
+  padding: 5rem 8rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14rem;
+}
+.container2__userrate {
+  color: hsl(25deg, 97%, 53%);
+  background-color: #303a46;
+  border-radius: 2rem;
+  padding: 0.5rem 1.3rem;
+}
+.container2__header {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 3rem;
+}
+.container2__p {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=new.css.map */

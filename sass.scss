@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+$Orange: hsl(25, 97%, 53%);
+
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+
+$Font-size-paragraph: 1.5rem;
+$btn-size:5rem;
+
+$items-bg-color: lighten($Dark-Blue, 5);
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $Very-Dark-Blue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container {
+    background-color: $Dark-Blue;
+    max-width: 40rem;
+    padding: 2rem 2rem;
+    font-family: overPass, sans-serif;
+    border-radius: 2rem;
+    flex-direction: column;
+}
+
+.container1 {
+    display: flex;
+    row-gap: 1.5rem;
+
+    &__icon {
+        background-image: url(./images/icon-star.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $items-bg-color;
+
+        padding: 2rem;
+        align-self: flex-start;
+
+        border-radius: 50%;
+    }
+
+    &__header {
+        color: $White;
+    }
+
+    &__p {
+        color: $Medium-Grey ;
+        font-size: 1.5rem;
+    }
+
+    &__rating {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 .6rem 0;
+        &--btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: $items-bg-color;
+            color: $Medium-Grey;
+            
+            width: $btn-size;
+            height: $btn-size;
+            
+            font-size: 1.4rem;
+            border-radius: 50%;
+            border: none;
+            &:hover {
+                color: $White;
+                background-color: lighten($Dark-Blue, 45) ;
+            }
+            &:focus {
+                background-color: $Orange;
+                color: $White;
+            }
+           
+        }
+    }
+
+    &__submit {
+        color: $White;
+        background-color: $Orange;
+        border: none;
+        border-radius: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        padding: 1rem 0;
+        transition: 100ms;
+
+        &:hover {
+            color: $Orange;
+            background-color: $White;
+        }
+        &:disabled {
+            background-color: darken($Medium-Grey, 30);
+            color: grey;
+        }
+    }
+}
+
+.container2 {
+    display: none;
+    align-items: center;
+    row-gap: 1rem;
+
+    &__icon {
+        background-image: url(./images/illustration-thank-you.svg);
+        padding: 5rem 8rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 14rem;
+
+    }
+
+    &__userrate {
+        color: $Orange;
+        background-color: lighten($Dark-Blue, 5 );
+        border-radius: 2rem;
+        padding: .5rem 1.3rem;
+    }
+
+    &__header {
+        color: $White;
+        font-size: 3rem;
+    }
+
+    &__p {
+        color: $Medium-Grey ;
+        font-size: 1.5rem;
+        
+    }
+}
